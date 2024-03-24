@@ -1,5 +1,5 @@
-const Person = require("./Person.js");
-const assert = require("node:assert/strict");
+import Person from "./Person.js";
+import assert from "node:assert/strict";
 
 describe("Person", () => {
   it("can get full name", () => {
