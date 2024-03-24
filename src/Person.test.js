@@ -1,4 +1,4 @@
-const Person = require("./Person.js");
+import Person from "./Person.js";
 
 describe("Person", () => {
   test("can get full name", () => {
