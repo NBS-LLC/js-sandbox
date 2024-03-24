@@ -1,13 +1,14 @@
 const Person = require("./Person.js");
+const assert = require("node:assert/strict");
 
 describe("Person", () => {
-  test("can get full name", () => {
+  it("can get full name", () => {
     const person = new Person("Nick", "Derevjanik", 1982);
-    expect(person.getFullName()).toBe("Derevjanik, Nick");
+    assert.equal(person.getFullName(), "Derevjanik, Nick");
   });
 
-  test("can get age", () => {
+  it("can get age", () => {
     const person = new Person("Nick", "Derevjanik", 1982);
-    expect(person.getAge()).toBe(42);
+    assert.equal(person.getAge(), 42);
   });
 });
